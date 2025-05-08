@@ -1,5 +1,13 @@
+<%@page import="java.net.CookieManager"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%
+    String loginId = CookieManager.readCookie(request, "loginId");
+    String cookieValue = "";
+    if(cookies != null){
+    	for
+    }
+    %>
 <!DOCTYPE html>
 <html>
 <head>
