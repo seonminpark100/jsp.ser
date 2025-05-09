@@ -15,3 +15,8 @@
 2025-05-08 16:38:11,131 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2025-05-08 16:38:16,754 [Worker-2: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\javastudy', return code '1', error message '<3>WSL (9 - Relay) ERROR: CreateProcessCommon:640: execvpe(/bin/bash) failed: No such file or directory
 '
+2025-05-08 18:17:30,393 [Framework stop - Equinox Container: 90580957-e57c-4113-b9f2-307f1ece723f] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[C:\Users\javastudy\Documents\JSP_Servlet20250319\jsp.ser\.git]
+2025-05-08 18:17:30,394 [Framework stop - Equinox Container: 90580957-e57c-4113-b9f2-307f1ece723f] WARN  org.eclipse.jgit.lib.Repository - close() called when useCnt is already zero for Repository[C:\Users\javastudy\Documents\JSP_Servlet20250319\.git]
+2025-05-09 09:26:52,593 [main] WARN  org.eclipse.jgit.util.FS_Win32 - Exception caught during execution of command '[bash, --login, -c, which git]' in 'C:\Users\javastudy', return code '1', error message '<3>WSL (9 - Relay) ERROR: CreateProcessCommon:640: execvpe(/bin/bash) failed: No such file or directory
+'
+2025-05-09 09:28:11,161 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

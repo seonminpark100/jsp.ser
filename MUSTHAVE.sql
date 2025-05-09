@@ -64,3 +64,13 @@ INSERT INTO board VALUES (seq_board_num.nextval, '지금은 가을입니다', '�
 INSERT INTO board VALUES (seq_board_num.nextval, '지금은 겨울입니다', '겨울연가', 'musthave', sysdate, 0);
 commit;
 
+select * from member;
+
+select id, pass, rownum from member;
+
+SELECT * FROM (
+    SELECT tb.*, rownum rNum from (
+    SELECT * FROM board order by num desc
+    )tb
+ )
+WHERE rNum BETWEEN 1 and 10;

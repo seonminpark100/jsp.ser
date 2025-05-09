@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import jakarta.servlet.ServletContext;
+
 public class JDBConnect
 {
 	public Connection con;
@@ -13,7 +15,7 @@ public class JDBConnect
 	public PreparedStatement psmt;
 	public ResultSet rs;
 	
-	public JDBConnect() {
+	public JDBConnect(ServletContext application) {
 		
 		try
 		{
