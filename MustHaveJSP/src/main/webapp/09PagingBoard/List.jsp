@@ -17,7 +17,7 @@
     }
     
     int totalCount = dao.selectCount(param);
-    List<BoardDTO> boardLists = dao.selectList(param);
+    List<BoardDTO> boardLists = dao.selectListPage(param);
     dao.close();
     %>
 <!DOCTYPE html>
