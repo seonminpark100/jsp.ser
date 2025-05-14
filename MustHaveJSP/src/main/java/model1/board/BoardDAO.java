@@ -1,10 +1,10 @@
 package model1.board;
 
-import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
+
 import common.JDBConnect;
 import jakarta.servlet.ServletContext;
 

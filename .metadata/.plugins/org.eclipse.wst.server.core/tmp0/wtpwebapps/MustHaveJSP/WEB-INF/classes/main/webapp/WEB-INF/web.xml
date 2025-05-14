@@ -31,7 +31,7 @@
   <param-value>oracle.jdbc.OracleDriver</param-value>
   </context-param>
   <context-param>
-  <param-name>OracleUrl</param-name>
+  <param-name>OracleURL</param-name>
   <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
   </context-param>
   <context-param>
@@ -72,7 +72,28 @@
 	<servlet-mapping>   <!-- 서블릿과 요청명(요청 URL) 매핑 -->
 		<servlet-name>HelloServlet</servlet-name>	<!-- <servlet>에서 사용할 이름과 동일 -->
 		<url-pattern>/12Servlet/HelloServlet.do</url-pattern>	<!-- 요청명으로 사용할 경로 -->
+	</servlet-mapping>	
+		<servlet>  <!-- 서블릿 등록 -->
+		<servlet-name>DirectServletPrint</servlet-name>	<!-- 서블릿 참조할 때 사용할 이름 -->
+		<servlet-class>servlet.DirectServletPrint</servlet-class>	<!-- 서블릿을 패키지포함 명시 -->
+	</servlet>	
+	<servlet-mapping>   <!-- 서블릿과 요청명(요청 URL) 매핑 -->
+		<servlet-name>DirectServletPrint</servlet-name>	<!-- <servlet>에서 사용할 이름과 동일 -->
+		<url-pattern>/12Servlet/DirectServletPrint.do</url-pattern>	<!-- 요청명으로 사용할 경로 -->
 	</servlet-mapping>
 	
+	<servlet>  
+		<servlet-name>MemberAuth</servlet-name>	<!-- 서블릿 참조할 때 사용할 이름 -->
+		<servlet-class>servlet.MemberAuth</servlet-class>
+	<init-param>
+		<param-name>admin_id</param-name>
+		<param-value>seonmin</param-value>
+	</init-param>	<!-- 서블릿을 패키지포함 명시 -->
+	</servlet>	
+	
+	<servlet-mapping>   
+		<servlet-name>MemberAuth</servlet-name>	<!-- <servlet>에서 사용할 이름과 동일 -->
+		<url-pattern>/12Servlet/MemberAuth.mvc</url-pattern>	<!-- 요청명으로 사용할 경로 -->
+	</servlet-mapping>
   
 </web-app>
