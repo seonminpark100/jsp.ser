@@ -39,11 +39,7 @@ try {
     OutputStream outStream = response.getOutputStream();  
 
     // 출력 스트림에 파일 내용 출력
-    byte b[] = new byte[(int)file.length()];
-    int readBuffer = 0;    
-    while ( (readBuffer = inStream.read(b)) > 0 ) {
-        outStream.write(b, 0, readBuffer);
-    }
+   c
 
     // 입/출력 스트림 닫음
     inStream.close(); 
